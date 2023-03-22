@@ -1,0 +1,259 @@
+/*
+filename: [style.css]
+author: [Laura White]
+created: [24/11/2022]
+last modified: [24/11/2022]
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 100vh;
+    background-color: #344E41;   
+}
+
+header h1 {
+        font-family: "Minecraft";
+        color: #DAD7CD;
+        font-size: 57px;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+    }
+
+h2{        
+    text-align: center;
+    font-family: "American Typewriter", serif;
+    font-size: 45px;
+}
+
+h3 {
+    padding-left: 250px;
+    font-size: 25.7px;
+    font-family: "American Typewriter", serif;
+    color: #000000;
+}
+
+p {
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴシック";
+}
+
+.fa {
+    padding-left: 200px;
+    font-size: 90px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+  }
+
+.python{
+    background-color: #FF4872;
+    border: none;
+    color: #F2DCE4;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: "Minecraft";
+    font-size: 25.24px;
+    margin: 4px 15px;
+    border-radius: 10px;
+  }
+
+  .html{
+    background-color: #3F4EA6;
+    border: none;
+    color: #F2DCE4;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-family: "Minecraft";
+    font-size: 25.24px;
+    margin: 4px 20px;
+    border-radius: 10px;
+  }
+
+.css{
+    background-color: #020659;
+    border: none;
+    color: #F2DCE4;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 38px;
+    font-size: 25.24px;
+    font-family: "Minecraft";
+    margin: 4px 20px;
+    border-radius: 10px;
+  }
+
+
+
+.buttons {
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-bottom: 20px;
+}
+
+.aboutme {
+    padding-top: 50px;
+}
+
+
+.workexperience {
+    padding-top: 50px;
+}
+
+.clubssocieties {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nagivation-bar {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        font-family: "American Typewriter";
+        font-size: 16px;
+        margin: auto;
+        text-decoration: none;
+    }
+
+.down-arrow {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    font-size: 60px;
+}
+
+.mainAboutMe {
+    background-color: #DAD7CD;
+    height: 100vh;
+}
+
+.mainAboutMe h2 {
+    padding-top: 8%;
+    color: #344E41;
+}
+
+.introduction{
+    padding-top: 3%;
+    padding-left: 18%;
+    padding-right: 18%;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.introduction p{
+    padding-top: 10%;
+    padding-left: 30%;
+    color: #344E41;
+}
+
+.introduction img {
+    width: 35vh;
+    border: 5px solid #344E41;
+}
+
+.educationandwork {
+    height: 100vh;
+    background-color: #344E41;
+}
+
+.educationandwork p {
+    color: #DAD7CD;
+    padding-left: 20%;
+    padding-top: 1%;
+}
+
+.educationandwork h2 {
+    color: #DAD7CD;
+    padding-bottom: 1%;
+}
+
+.educationtraining {
+    padding-top: 7%;
+}
+
+.mainProjects {
+    background-color: #DAD7CD;
+    height: 100vh;
+}
+
+.mainProjects h2 {
+    padding-top: 8%;
+    padding-bottom: 3%;
+    color: #344E41;
+}
+
+.mainProjects img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vh;
+    border: 5px solid #A3B18A;
+}
+
+.mainProjects p {
+    padding-top: 3%;
+    color: #344E41;
+    text-align: center;
+}
+
+.mainProjects a{
+    color: #344E41;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "ヒラギノ角ゴシック";
+}
+
+.websiteproject img:hover {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vh;
+    border: 5px solid #A3B18A;
+}
+
+
+footer {
+    height: 8vh;
+    background-color: #344E41;
+    padding-top: 1%;
+}
+
+footer p {
+    font-family: "American Typewriter";
+    color: #DAD7CD;
+    font-size: 15px;
+    text-align: center;
+}
+
+.socials {
+    text-align: center;
+}
+
+.socials a {
+    padding: 0px;
+    color: #DAD7CD
+}
+
+a {
+        font-family: "American Typewriter", serif;
+        padding-right: 30px;
+        color: #DAD7CD; 
+        text-decoration: none;
+    }
+
+a:hover {
+        color:#A3B18A; 
+}
