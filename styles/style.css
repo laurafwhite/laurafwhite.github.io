@@ -186,11 +186,10 @@ p {
 
 .mainProjects {
     background-color: #DAD7CD;
-    height: 100vh;
 }
 
 .mainProjects h2 {
-    padding-top: 8%;
+    padding-top: 4%;
     padding-bottom: 3%;
     color: #344E41;
 }
@@ -205,6 +204,7 @@ p {
 
 .mainProjects p {
     padding-top: 3%;
+    padding-bottom: 3%;
     color: #344E41;
     text-align: center;
 }
