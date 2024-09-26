@@ -5,4 +5,3 @@ A portfolio website built with CSS & HTML, featuring:
 - Portfolio
 
 
-Unfortunately not yet compatible with mobile devices.. a work in progress!
