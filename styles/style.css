@@ -1,207 +1,134 @@
-/*
-filename: [style.css]
-author: [Laura White]
-created: [24/11/2022]
-last modified: [24/11/2022]
-*/
+/* Global reset */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Flexbox layout */
 body {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-family: "American Typewriter", serif;
+    background-color: #344E41;
+    color: #DAD7CD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+    max-width: 1200px; /* Constrain the width of the content */
+    margin: 0 auto; /* Center the content */
 }
 
+/* Header */
 header {
-    height: 100vh;
-    background-color: #344E41;   
-}
-
-header h1 {
-        font-family: "Minecraft";
-        color: #DAD7CD;
-        font-size: 57px;
-        position: absolute;
-        top: 50%;
-        left: 25%;
-    }
-
-h2{        
+    background-color: #344E41;
+    color: #DAD7CD;
     text-align: center;
-    font-family: "American Typewriter", serif;
-    font-size: 45px;
+    padding: 50px 0;
+    width: 100%;
 }
 
-h3 {
-    padding-left: 250px;
-    font-size: 25.7px;
-    font-family: "American Typewriter", serif;
-    color: #000000;
+.navigation-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
-p {
-    font-size: 16px;
-    font-family: "ヒラギノ角ゴシック";
-}
-
-.fa {
-    padding-left: 200px;
-    font-size: 90px;
-    width: 10px;
-    text-align: center;
+.navigation-bar a {
+    color: #DAD7CD;
     text-decoration: none;
-    margin: 10px 10px;
-    border-radius: 50%;
-  }
-
-.python{
-    background-color: #FF4872;
-    border: none;
-    color: #F2DCE4;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 20px;
-    font-family: "Minecraft";
-    font-size: 25.24px;
-    margin: 4px 15px;
-    border-radius: 10px;
-  }
-
-  .html{
-    background-color: #3F4EA6;
-    border: none;
-    color: #F2DCE4;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 28px;
-    font-family: "Minecraft";
-    font-size: 25.24px;
-    margin: 4px 20px;
-    border-radius: 10px;
-  }
-
-.css{
-    background-color: #020659;
-    border: none;
-    color: #F2DCE4;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 38px;
-    font-size: 25.24px;
-    font-family: "Minecraft";
-    margin: 4px 20px;
-    border-radius: 10px;
-  }
-
-
-
-.buttons {
-    padding-top: 20px;
-    padding-left: 250px;
-    padding-bottom: 20px;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.aboutme {
-    padding-top: 50px;
+.navigation-bar a:hover {
+    color: #A3B18A;
 }
-
-
-.workexperience {
-    padding-top: 50px;
-}
-
-.clubssocieties {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.nagivation-bar {
-        position: absolute;
-        top: 5%;
-        right: 2%;
-        font-family: "American Typewriter";
-        font-size: 16px;
-        margin: auto;
-        text-decoration: none;
-    }
 
 .down-arrow {
-    position: absolute;
-    bottom: 1%;
-    left: 50%;
+    margin-top: 40px;
     font-size: 60px;
 }
 
+.down-arrow a {
+    text-decoration: none;
+    color: #A3B18A;
+}
+
+/* Section Spacing */
+section {
+    padding: 80px 0; /* Consistent spacing between sections */
+    width: 100%;
+}
+
+/* About Me Section */
 .mainAboutMe {
     background-color: #DAD7CD;
-    height: 100vh;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
 }
 
-.mainAboutMe h2 {
-    padding-top: 8%;
-    color: #344E41;
-}
-
-.introduction{
-    padding-top: 3%;
-    padding-left: 18%;
-    padding-right: 18%;
-    display: grid;
-    grid-template-columns: min-content 1fr;
-}
-
-.introduction p{
-    padding-top: 10%;
-    padding-left: 30%;
-    color: #344E41;
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .introduction img {
-    width: 35vh;
+    width: 20vh;
+    max-width: 150px;
     border: 5px solid #344E41;
+    border-radius: 50%;
 }
 
+.about-text {
+    max-width: 800px;
+    text-align: center;
+    color: #344E41;
+    margin-top: 30px; /* Add space between the image and text */
+}
+
+/* Education and Work Section */
 .educationandwork {
-    height: 100vh;
     background-color: #344E41;
-}
-
-.educationandwork p {
+    padding: 50px;
     color: #DAD7CD;
-    padding-left: 20%;
-    padding-top: 1%;
+    width: 100%;
 }
 
-.educationandwork h2 {
-    color: #DAD7CD;
-    padding-bottom: 1%;
+.educationwork-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
-.educationtraining {
-    padding-top: 7%;
+.educationtraining, .workexperience {
+    max-width: 400px;
+    text-align: center;
 }
 
+/* Portfolio Section */
 .mainProjects {
     background-color: #DAD7CD;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
 }
 
-.mainProjects h2 {
-    padding-top: 4%;
-    padding-bottom: 3%;
-    color: #344E41;
+.project-item {
+    margin-bottom: 40px;
 }
 
-.mainProjects img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65vh;
-    border: 5px solid #A3B18A;
+.project-image {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
+/* Project description font color */
 .mainProjects p {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -209,51 +136,71 @@ p {
     text-align: center;
 }
 
-.mainProjects a{
+.mainProjects h2 {
     color: #344E41;
-    padding: 0px;
-    font-size: 16px;
-    font-family: "ヒラギノ角ゴシック";
 }
 
-.websiteproject img:hover {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 65vh;
-    border: 5px solid #A3B18A;
+/* Specifically for links in the .mainProjects section */
+.mainProjects a {
+    color: #A3B18A;
 }
 
+.mainProjects a:hover {
+    color: #344E41;
+}
 
+/* Footer */
 footer {
-    height: 8vh;
     background-color: #344E41;
-    padding-top: 1%;
-}
-
-footer p {
-    font-family: "American Typewriter";
-    color: #DAD7CD;
-    font-size: 15px;
+    padding: 40px 20px; /* Add more padding for spacing */
+    width: 100%;
     text-align: center;
+    color: #DAD7CD;
 }
 
 .socials {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .socials a {
-    padding: 0px;
-    color: #DAD7CD
+    font-size: 30px;
+    color: #DAD7CD;
 }
 
-a {
-        font-family: "American Typewriter", serif;
-        padding-right: 30px;
-        color: #DAD7CD; 
-        text-decoration: none;
+/* Media Queries */
+@media (max-width: 768px) {
+    .introduction img {
+        width: 15vh;
+        max-width: 100px;
     }
 
-a:hover {
-        color:#A3B18A; 
+    .navigation-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .educationwork-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .down-arrow {
+        font-size: 40px;
+    }
+
+    section {
+        padding: 50px 0; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .mainProjects img {
+        width: 100%;
+    }
 }
