@@ -5,72 +5,93 @@
 	<meta name="description" content="main"/>
   	<meta name="keywords" content="HTML5,CSS, tags"/>
   	<meta name="author" content="Laura White"/>
-	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   	<link href="styles/style.css" rel="stylesheet"/>
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<script src="https://kit.fontawesome.com/48fa42b9b9.js" crossorigin="anonymous"></script>
   	<title>Laura White</title>
-	</head>
+</head>
 <body>
 	<header>
     <h1>Welcome! My name is Laura.</h1>
-    <div class="nagivation-bar">
-      <a class="elist" href="#aboutme">About me</a>
-      <a class="elist" href="#education" >Education</a>
+    <nav class="navigation-bar">
+      <a class="elist" href="#aboutme">About Me</a>
+      <a class="elist" href="#education">Education</a>
       <a class="elist" href="#portfolio">Portfolio</a>
-      </div>
-    <div class = "down-arrow">
+    </nav>
+    <div class="down-arrow">
       <a href="#aboutme">&#8675</a>
-      </div>
+    </div>
   </header>
     
-    <div id="aboutme" class="mainAboutMe">
-      <h2>About me</h2>
+  <section id="aboutme" class="mainAboutMe">
+      <h2>About Me</h2>
       <div class="introduction">
-        <img  src="photos/Laura.png" alt="Laura White">
-        <p>Hi! My name is Laura and I am a 22-year-old computer science and mathematics student at Monash University based in Melbourne, Australia.
-        <br> I have a fascination with all things machine learning, and human-computer interaction.
-        What you'll see here 
-        is my collection of works and projects that I have accumulated throughout my undergraduate degree. 
-        </p>
-
-
+        <img src="photos/Laura.png" alt="Laura White">
+        <div class="about-text">
+          <p>Hi! My name is Laura and I am a 24-year-old computer science student at Monash University based in Melbourne, Australia.
+          <br> I have a fascination with all things machine learning, and human-computer interaction.
+          What you'll see here is my collection of works and projects that I have accumulated throughout my undergraduate degree. 
+          </p>
+        </div>
       </div>
-    </div>
+  </section>
 
-    <div  id="education" class="educationandwork">
+  <section id="education" class="educationandwork">
+    <div class="educationwork-container">
       <div class="educationtraining">
         <h2>Education</h2>
-        <p>Monash University, Bachelor of Computer Science, graduating December 2024</p>
-        <p>Monash University, Bachelor of Business (Economics & Statistics)(Incomplete), 2019 - 2020</p>
+        <p>Monash University, Bachelor of Computer Science, graduating 2025</p>
       </div>
       <div class="workexperience">
         <h2>Work Experience</h2>
-        <p>Front Office Attendant, Crystal Club, Crown Towers Melbourne</p>
-        <p>(April 2022 - current)</p>
-        <p></p>
-        <p>Guest Services Agent, Melbourne Marriott Hotel</p>
-        <p>(March 2019 - April 2022)</p>
+        <p>Front Office Attendant, Crystal Club, Crown Towers Melbourne (April 2022 - current)</p>
+        <p>Global Markets Summer Analyst (Trading), Commonwealth Bank of Australia (Nov 2023 - Feb 2024)</p>
       </div>
     </div>
+  </section>
     
-    <div id="portfolio" class="mainProjects">
+  <section id="portfolio" class="mainProjects">
       <h2>My Projects</h2>
-      <img class="websiteproject" src="photos/website_icon.png" alt="Website Icon">
-      <p><b>WEBSITE </b><br>This website was made from HTML/CSS! <br>You can find the code <a href="https://github.com/laurafwhite/laurafwhite.github.io"> here </a>on my Github.</p>
-      <img class="sortingproject" src="photos/sortingvisualiser.png" alt="Sorting Icon">
-      <p><b>SORTING VISUALIZER </b><br>A sorting visualiser made from Javascript, HTML & CSS, which you can find <a href="#"> here </a> <br>You can find the code <a href="#"> here </a>on my Github.</p>
-      <img class="sudokusolver" src="photos/sudoku.png" alt="Sudoku Solver">
-      <p><b>SUDOKU SOLVER</b><br>A sudoku solver made in python! <br>You can find the code <a href="https://github.com/laurafwhite/sudoku_solver"> here </a>on my Github.</p>
+      <div class="project-item"></div>
+        <img class="project-image" src="photos/robot.png" alt="NERF and Gaussian Splatting Project">
+        <p>
+          <b>OBJECT DIGITISATION USING NERF AND GAUSSIAN SPLATTING</b><br>
+            One of my most engaging technical projects has been working with Monash DeepNeuron, our AI student club, on an innovative project involving digital rendering of stationary objects using cutting-edge technologies like NERF (Neural Radiance Fields) and Gaussian splatting. Our goal is to leverage NERF and Gaussian splatting technologies to generate detailed and accurate digital renderings of stationary objects. 
+            <br><br>
+            To achieve this, we first code a KUKA robot in Java to capture various angles and perspectives around the object. This footage is then processed through COLMAP on a Linux system to serve as input for the NERF or Gaussian models. Currently, we are working to elevate the project by developing a user interface/application to simplify and refine the entire process. 
+            <br><br>
+            Furthermore, we plan to automate the COLMAP processing and model creation/viewing steps, reducing the need for manual Linux commands and streamlining the user experience. This project perfectly embodies my passion for both software development and artificial intelligence, and my enthusiasm for learning.
+        </p>
     </div>
+      <div class="project-item">
+        <img class="project-image" src="photos/sudoku.png" alt="Sudoku Solver">
+        <p><b>SUDOKU SOLVER</b><br>
+          An interactive sudoku game, generator, and solver:<br>
+            The project enables users to engage with Sudoku puzzles in multiple ways, offering features that allow them to either insert numbers, restart or regenerate a new board, or even have the program solve the puzzle for them.
+            <br><br>
+            The solver employs techniques such as backtracking and a unique "value by single" strategy. The backtracking algorithm systematically tries all possible numbers until the solution is found, while the "value by single" method identifies board positions that can only have one valid number.
+            <br><br>
+            By offering users the ability to interact with the puzzle and engage in the solving process themselves, this project represents a balance between game design and algorithm development, blending my interests in problem-solving, user experience, and optimization algorithms.
+          <br>
+          You can find the code <a href="https://github.com/laurafwhite/sudoku_solver">here</a> on my Github.
+      </p>
+      </div>
+      <div class="project-item">
+        <img class="project-image" src="photos/website_icon.png" alt="Website Icon">
+        <p><b>WEBSITE</b><br>This website was made from HTML/CSS! <br>You can find the code <a href="https://github.com/laurafwhite/laurafwhite.github.io"> here </a>on my Github.</p>
+      </div>
 
-    <footer>
-      <p>Created by Laura White</p>
-      <div class="socials">
-        <a href="https://www.linkedin.com/in/laura-white-a728a922a/" class="fa fa-linkedin"></a>
-        <a href="https://github.com/laurafwhite" class="fa fa-github"></a>
-        <a href="mailto:laurawhite7878@gmail.com" class="fa fa-envelope"></a>
-        
-        </div>
-    </footer>
+  </section>
 
+  <footer>
+    <p>Created by Laura White</p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/laura-white-a728a922a/" class="fa fa-linkedin"></a>
+      <a href="https://github.com/laurafwhite" class="fa fa-github"></a>
+      <a href="mailto:laura.f.white@outlook.com" class="fa fa-envelope"></a>
+    </div>
+  </footer>
+
+</body>
+</html>
